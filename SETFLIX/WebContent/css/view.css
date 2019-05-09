@@ -1,0 +1,41 @@
+@charset "UTF-8";
+* {margin: 0; padding: 0}
+img {transition: 0.5s ease;}
+img:hover {transform: scale(1.05);}
+body {background: black;}
+
+.wrap {width: 1600px; margin: 0 auto; background: #aaaaaa22; min-height: 500px; padding-top: 85px; display: flex;}
+.wrap>* {display: inline-block;}
+h1, h2, h3, h4, h5, h6, p, a {color: #999;}
+a {text-decoration: none;}
+section {width: 80%;}
+iframe {border: 0; width: 100%; height: 600px;}
+.heart {width: 30px; height: 30px; cursor: pointer; float: right;}
+.hidden {display: none;}
+
+article {padding: 10px;}
+.serise h4 {text-align: right;}
+aside {width: 20%;}
+aside .asidebox {position: relative;}
+aside .thumbnail, aside .loading {text-align: right; width: 168px; margin: 5px 0;}
+aside .title {display: inline-block; position: absolute; top: 8px; left: 180px;}
+aside .loading {display: none;}
+.inner {display: none;}
+.serise .toggle {float: right;}
+.serise .toggle .inner {clear: both;}
+
+@media all and (min-device-width: 320px) and (max-device-width: 480px) {
+	p {overflow: hidden; text-overflow: ellipsis; white-space: nowrap}
+	
+	header {width: 100%; min-width: 300px;}
+	
+	.wrap{width: 100%; display: block;}
+	.wrap>* {display: block}
+	section{width: 100%;}	
+	aside {width: 100%;}
+	aside .thumbnail{width: 25%;}
+	aside .title {display: inline-block; position: absolute; top: 8px; left: 265px;}
+	aside .title a{font-size: 25px;}
+	
+	footer{width: 100%; min-width: 300px;}
+}
